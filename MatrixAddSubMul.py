@@ -49,7 +49,7 @@ def mat_mul(mat1,mat2):
         value=0
         for y in range(len(mat2[0])):
             for k in range(len(mat1)):
-                value += int(mat1[x][k])*int(mat2[k][y])
+                value += round(mat1[x][k]*mat2[k][y])
             row.append(value)
 
         #If len=1, append an element into list
